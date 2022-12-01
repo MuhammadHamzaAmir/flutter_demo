@@ -14,15 +14,11 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[700],
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text(
-          "I am podor",
-          style: TextStyle(
-              fontSize: 30.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.red,
-              fontFamily: "IndieFlower"),
-        ),
+      body: Container(
+        padding: const EdgeInsets.all(40),
+        margin: const EdgeInsets.all(20),
+        color: Colors.teal,
+        child: const Text("OKAY"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
