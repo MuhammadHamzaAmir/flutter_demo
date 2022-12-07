@@ -14,47 +14,34 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[700],
         centerTitle: true,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      body: Row(
         children: [
-          Row(
-            children: [
-              Text("Hello"),
-              Text("World"),
-            ],
+          Expanded(
+              flex:1,
+              child: Image.asset('images/image_asset.jpg')
           ),
-          Container(
-            padding: const EdgeInsets.all(20),
-            color: Colors.purple[600],
-            child: const Text(
-                "1. OKAY",
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white70,
-                ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.all(25),
+              color: Colors.purple[600],
+              child: const Text('Container 1'),
             ),
           ),
-          Container(
-            padding: const EdgeInsets.all(25),
-            color: Colors.purple[500],
-            child: const Text(
-                "2. OKAY",
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white70,
-                ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.all(25),
+              color: Colors.purple[400],
+              child: const Text('Container 2'),
             ),
           ),
-          Container(
-            padding: const EdgeInsets.all(30),
-            color: Colors.purple[300],
-            child: const Text(
-                "3. OKAY",
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white70,
-                ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: const EdgeInsets.all(25),
+              color: Colors.purple[300],
+              child: const Text('Container 3'),
             ),
           ),
         ],
